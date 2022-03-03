@@ -58,6 +58,18 @@ h1 {
   justify-content: center;
 }
 
+#circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+#circle i {
+  font-size: 42px;
+  color: #2b2b2b;
+}
+
 .circle1 {
   height: 10rem;
   width: 10rem;
@@ -75,7 +87,6 @@ h1 {
   margin: 2rem;
   cursor: pointer;
   box-shadow: 0.2rem 0.2rem 2rem#45fc3c;
-
   border-style: solid;
   border-width: thin;
 }
@@ -150,16 +161,15 @@ h1 {
 }
 
 .button1 {
+  display: block;
   width: 14rem;
   height: 5rem;
   background-color: rgb(0, 38, 255);
-  display: flex;
   font-size: 42px;
   font-family: "Iceland", cursive;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  margin-right: 3rem;
   padding: 0.5rem;
   border-style: outset;
   color: aliceblue;
@@ -167,10 +177,10 @@ h1 {
 }
 
 .button2 {
+  display: none;
   width: 14rem;
   height: 5rem;
   background-color: rgb(255, 0, 0);
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 42px;
