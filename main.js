@@ -10,6 +10,8 @@ let score = 0;
 let timer;
 let rounds = 0;
 let pace = 1000;
+const startMusic = new sound("vlad-gluschenko-good-times.mp3");
+const endMusic = new sound("16 - Game Over.mp3");
 
 const circleClicked = (i) => {
   if (i !== active) {
@@ -22,12 +24,11 @@ const circleClicked = (i) => {
 };
 
 const startGameMusic = () => {
-  startMusic = new sound("vlad-gluschenko-good-times.mp3");
+  console.log("hey");
   startMusic.play();
 };
 
 const endGameMusic = () => {
-  endMusic = new sound("16 - Game Over.mp3");
   startMusic.stop();
   endMusic.play();
 };
