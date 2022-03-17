@@ -33,8 +33,12 @@ const endGameMusic = () => {
   endMusic.play();
 };
 
-const startGame = () => {
+const startitAll = () => {
   startGameMusic();
+  startGame();
+};
+
+const startGame = () => {
   start.style.display = "none";
   stopGame.style.display = "inline";
   let nextActive = pickNew(active);
@@ -101,6 +105,6 @@ const getRndInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-start.addEventListener("click", startGame);
+start.addEventListener("click", startitAll);
 stopGame.addEventListener("click", endGame);
 closeButton.addEventListener("click", reloadGame);
