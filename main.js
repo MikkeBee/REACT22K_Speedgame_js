@@ -21,7 +21,19 @@ const circleClicked = (i) => {
   }
 };
 
+const startGameMusic = () => {
+  startMusic = new sound("vlad-gluschenko-good-times.mp3");
+  startMusic.play();
+};
+
+const endGameMusic = () => {
+  endMusic = new sound("16 - Game Over.mp3");
+  startMusic.stop();
+  endMusic.play();
+};
+
 const startGame = () => {
+  startGameMusic();
   start.style.display = "none";
   stopGame.style.display = "inline";
   let nextActive = pickNew(active);
@@ -54,7 +66,23 @@ const startGame = () => {
   }
 };
 
+function sound(src) {
+  this.sound = document.createElement("audio");
+  this.sound.src = src;
+  this.sound.setAttribute("preload", "auto");
+  this.sound.setAttribute("controls", "none");
+  this.sound.style.display = "none";
+  document.body.appendChild(this.sound);
+  this.play = function () {
+    this.sound.play();
+  };
+  this.stop = function () {
+    this.sound.pause();
+  };
+}
+
 const endGame = () => {
+  endGameMusic();
   clearTimeout(timer);
   overlay.style.visibility = "visible";
   result.textContent = `Your final score was ${score}.`;
