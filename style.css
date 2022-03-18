@@ -371,3 +371,73 @@ h1 {
     margin: 2rem;
   }
 }
+
+@media (max-width: 508px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .circles {
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .circle1 {
+    height: 8.5rem;
+    width: 8.5rem;
+    margin: 2rem;
+  }
+
+  .circle2 {
+    height: 8.5rem;
+    width: 8.5rem;
+    margin: 2rem;
+  }
+
+  .circle3 {
+    height: 8.5rem;
+    width: 8.5rem;
+    margin: 2rem;
+  }
+
+  .circle4 {
+    height: 8.5rem;
+    width: 8.5rem;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 432px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  .circles {
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .circle1 {
+    height: 7rem;
+    width: 7rem;
+    margin: 2rem;
+  }
+
+  .circle2 {
+    height: 7rem;
+    width: 7rem;
+    margin: 2rem;
+  }
+
+  .circle3 {
+    height: 7rem;
+    width: 7rem;
+    margin: 2rem;
+  }
+
+  .circle4 {
+    height: 7rem;
+    width: 7rem;
+    margin: 2rem;
+  }
+}
