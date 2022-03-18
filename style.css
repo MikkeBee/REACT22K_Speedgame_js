@@ -441,3 +441,38 @@ h1 {
     margin: 2rem;
   }
 }
+
+@media (max-width: 385px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .circles {
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .circle1 {
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem;
+  }
+
+  .circle2 {
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem;
+  }
+
+  .circle3 {
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem;
+  }
+
+  .circle4 {
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem;
+  }
+}
